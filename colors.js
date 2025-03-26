@@ -18,5 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
     applyColor(); // Apply color when page loads
 
     // Automatically change colors every 5 seconds (5000ms)
-    setInterval(applyColor, 5000);
+    setInterval(applyColor, 2000);
 });
