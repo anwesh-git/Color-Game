@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function applyColors() {
         squares.forEach(square => {
-            square.style.backgroundColor = generateColor(); // Assign different random color to each square
+            square.style.backgroundColor = generateColor(); // Assign a unique color to each box
         });
     }
 
-    applyColors(); // Apply colors when the page loads
+    applyColors(); // Apply unique colors when the page loads
 
-    // Automatically change colors every 5 seconds (5000ms)
-    setInterval(applyColors, 5000);
+    setInterval(applyColors, 1000); // Change colors every 1 seconds
 });
