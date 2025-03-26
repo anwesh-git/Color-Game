@@ -1,31 +1,61 @@
+/* General Page Styling */
 body {
     background-color: #232323;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Full-Width Header */
+.header {
+    background-color: steelblue; /* Full width background */
+    width: 100vw; /* Takes entire page width */
+    padding: 10px 0;
+    text-align: center;
 }
 
 .header h1 {
     color: white;
-    background-color: #2C8E99;
-    font-size: 2.5em;
+    text-align: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 2px 0; /* Slightly more padding for spacing */
+    line-height: 1.1;
+    font-size: 2.5em; /* Increased font size */
+    font-weight: bold; /* Bold text */
+    background: steelblue;
     text-transform: capitalize;
 }
 
-#container {
-    max-width: 600px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.lowercase {
+    text-transform: lowercase;
 }
 
+/* Container for Squares */
+#container {
+    border-radius: 10px; /* Optional: rounded corners */
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr); /* 3x3 grid */
+    gap: 8px;
+    width: 60vw; /* Fit within the viewport */
+    max-width: 500px; /* Keep it balanced */
+    margin-top: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+}
+
+/* Squares - Adjusted to be perfect squares */
 .square {
-    width: 30%;
-    padding-bottom: 30%;
-    margin: 1.66%;
-    border-radius: 10%;
-    transition: background 0.5s;
+    width: 100%;
+    padding-bottom: 100%; /* Makes it a square */
+    background-color: purple;
+    border-radius: 15%;
+    transition: background 0.3s;
 }
